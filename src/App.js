@@ -17,7 +17,7 @@ function App() {
         <NavBar />
             <div id="page-body">
             <Route path="/" component={HomePage} exact />
-            <Route path="/article" component={ArticlePage} />
+            <Route path="/article/:title" component={ArticlePage} />
             <Route path="/articlelist" component={ArticleList} />
             <Route path="/about" component={AboutPage} />            
         </div>

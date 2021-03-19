@@ -1,11 +1,13 @@
 import React from "react"
 import reactDom from "react-dom"
 
-const ArticlePage = () => {
+const ArticlePage = ({match}) => {
+    const title = match.params.title;
+    console.log("params : ", match.params);
     return(
     <>
         <div className="article-page">
-            <h3>Article</h3>
+            <h3>Article: {title}</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Netus et malesuada fames ac turpis. Suspendisse ultrices gravida dictum fusce ut placerat. Duis at consectetur lorem donec massa sapien faucibus et. Tellus at urna condimentum mattis pellentesque. Sem fringilla ut morbi tincidunt augue interdum velit. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Sed vulputate mi sit amet.
         </p>
