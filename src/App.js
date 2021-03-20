@@ -9,6 +9,7 @@ import ArticlePage from './pages/article-page';
 import ArticleList from './pages/article-list';
 import HomePage from './pages/home-page'
 
+
 function App() {
   return (
     <Router>
@@ -17,7 +18,7 @@ function App() {
         <NavBar />
             <div id="page-body">
             <Route path="/" component={HomePage} exact />
-            <Route path="/article/:title" component={ArticlePage} />
+            <Route path="/article/:name" component={ArticlePage} />
             <Route path="/articlelist" component={ArticleList} />
             <Route path="/about" component={AboutPage} />            
         </div>
