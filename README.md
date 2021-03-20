@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Full Stack Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on "FromReact: Creating and Hosting a Full-Stack Site" by [Shaun Wassell](https://www.lynda.com/Shaun-Wassell/9363054-1.html), a vidio course on [lynda.coml](lynda.com). My code differs from the tutorial but the core of it is based on following along with the tutorial.
 
 ## Available Scripts
 
