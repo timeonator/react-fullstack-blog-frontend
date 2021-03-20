@@ -9,7 +9,6 @@ const ArticleListPage = () => {
     <div className="article-list-page">
         <h2>Articles</h2>
         <ArticleList articles={articleContent} />
-        <h2>Other Articles</h2>
     </div>
     </>)
     }
