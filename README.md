@@ -1,6 +1,6 @@
 # React Full Stack Blog
 
-This project is based on a video tutorial "FromReact: Creating and Hosting a Full-Stack Site" by [Shaun Wassell](https://www.lynda.com/Shaun-Wassell/9363054-1.html) on [lynda.com](https://lynda.com). My code differs from the tutorial but the core of it is based on following along with the tutorial.
+This project is based on a video tutorial "React: Creating and Hosting a Full-Stack Site" by [Shaun Wassell](https://www.lynda.com/Shaun-Wassell/9363054-1.html) on [lynda.com](https://lynda.com). My code differs from the tutorial but the core of it is based on following along with the tutorial.
 
 ## Available Scripts
 
