@@ -11,7 +11,7 @@ const ArticleContentForm = () => {
             <input type="text" onChange={setUserName} value= {username} />
             <input type="text" onChange={setArticleName} value= {articleName} />
             <input type="text" onChange={setArticleTitle} value= {articleTitle} />
-            <input type="textarea" onChange={setArticleContent} value={articleContent}
+            <input type="textarea" onChange={setArticleContent} value={articleContent} />
         </div>  
     );
 
