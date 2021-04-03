@@ -8,9 +8,9 @@ import AddCommentForm from '../components/add-comment-form'
 
 const ArticlePage = ({match}) => {
     const name = match.params.name
-    const article = articleContent.find(article => article.name === name);
-    const otherArticles = articleContent.filter(article => article.name !== name)
-    const [articleInfo, setArticleInfo] = useState({upvotes: 0, comments : []});
+    // const article = articleContent.find(article => article.name === name);
+    // const otherArticles = articleContent.filter(article => article.name !== name)
+    const [articleInfo, setArticleInfo] = useState({upvotes: 0, comments : [], title: "", name: "", content:[]});
     useEffect(() => {
         const fetchData = async () => {
             const result = await fetch(`/api/articles/${name}`);
@@ -21,21 +21,21 @@ const ArticlePage = ({match}) => {
         fetchData();
     },[name]);
 
-    if(!article) return <PageNotFound /> 
+    if(!articleInfo) return <PageNotFound /> 
 
     return(
     <>
-        <h3>{article.title}</h3>
+        <h3>{articleInfo.title}</h3>
         <UpvoteSection articleName={name} upvotes={articleInfo.upvotes} setArticleInfo={setArticleInfo}/>
         {/* article.content is a array of paragraphs */}
         <div>
-            {article.content.map((paragraph, key) => {
+            {articleInfo.content.map((paragraph, key) => {
                 return(<p key={key}>{paragraph}</p>)
             })}
             <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
             <CommentsList comments={articleInfo.comments} />
-            <h3>Other Articles:</h3>
-            <ArticleList articles={otherArticles} />
+            {/* <h3>Other Articles:</h3>
+            <ArticleList articles={otherArticles} /> */}
         </div>
 
     </>
