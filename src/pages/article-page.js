@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import ArticleList from '../components/article-list'
+// import ArticleList from '../components/article-list'
 import PageNotFound from './page-not-found'
-import articleContent from './article-content'
 import CommentsList from '../components/comments-list'
 import UpvoteSection from '../components/upvote-section'
 import AddCommentForm from '../components/add-comment-form'
