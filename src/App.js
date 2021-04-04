@@ -10,6 +10,7 @@ import ArticlePage from './pages/article-page';
 import ArticleListPage from './pages/article-list-page';
 import HomePage from './pages/home-page'
 import PageNotFound from './pages/page-not-found'
+import NewPage from './pages/new-page'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/article/:name" component={ArticlePage} />
                     <Route path="/articlelistpage" component={ArticleListPage} />
                     <Route path="/about" component={AboutPage} />
+                    <Route path="/new" component={NewPage} />
                     <Route component={PageNotFound} />                       
                 </Switch>
          

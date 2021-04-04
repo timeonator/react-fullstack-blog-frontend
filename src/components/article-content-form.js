@@ -1,17 +1,31 @@
+import '../styles/article-content-form.css';
 import React, {useState} from 'react'
 
+const addArticle = async () => {
+
+}
 
 const ArticleContentForm = () => {
-    [username, setUserName] = useState("");
-    [articleName, setArticleName]= useState("");
-    [articleTitle, setArticleTitle]= useState("");
-    [articleContent, setArticleContent] = useState("");
+    const [username, setUserName] = useState("");
+    const [articleName, setArticleName]= useState("");
+    const [articleTitle, setArticleTitle]= useState("");
+    const [articleContent, setArticleContent] = useState("");
     return(
-        <div className='article-content-form'>
-            <input type="text" onChange={setUserName} value= {username} />
-            <input type="text" onChange={setArticleName} value= {articleName} />
-            <input type="text" onChange={setArticleTitle} value= {articleTitle} />
-            <input type="textarea" onChange={setArticleContent} value={articleContent} />
+        <div id='article-content-form'>
+            <h3>New Article</h3>
+            <label>User Name
+                <input type="text" onChange={setUserName} value= {username} />
+            </label>
+            <label>Article Name
+                <input type="text" onChange={setArticleName} value= {articleName} />                
+            </label>
+            <label>Title
+                <input type="text" onChange={setArticleTitle} value= {articleTitle} />
+            </label>
+            <label>Content
+                <input type="textarea" onChange={setArticleContent} value={articleContent} />
+            </label>
+            <button onClick={addArticle}>Save </button>
         </div>  
     );
 
